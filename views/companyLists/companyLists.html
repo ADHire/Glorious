@@ -1,0 +1,132 @@
+<!-- Big View of company profiles-->
+<div class = "visible-sm visible-md visible-lg hidden-s">
+	<div class="row companyBlocks">
+		<div id="profileHeader" class="col-xs-12">
+			<div class="profilePicture">
+				<img src="img/companyPictures/gc-small.png" height="200" width="200" class="img-rounded">
+				<ul class="socialStuffs">
+					<a href="https://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a> <a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a><a href="https://www.github.com"><i class="fa fa-github fa-3x"></i></a>
+				</ul>
+			</div>
+			<div class="companyProfileInfo">
+				<a href="#/companyInfo">
+					<div id="nameBorder">
+					<h3>Grand Circus</h3>
+					</div>
+				</a>
+				<div class="quickViewOfInfo row">
+				  <div class="col-sm-12">
+				    <div class="row">
+				      <div class="col-sm-6">
+								<ul style="color:white;"> <!-- Add/change in CSS-->
+									<li><a href="#/companyInfo"><h4><i class="fa fa-hourglass-start"></i>Status: Sent an email</h4></a></li>
+									<li><a href="#/companyInfo"><h4><i class="fa fa-pencil-square-o"></i></i>Next Step: Follow up</h4></a></li>
+				        </ul>
+				      </div>
+				      <div class="col-sm-6">
+				        <ul style="color:white;">
+									<li><a href="#/companyInfo"><h4><i class="fa fa-map-marker"></i>Location: Detroit, Michgan</h4><a></li>
+									<li><a href="#/companyInfo"><h4><i class="fa fa-tasks"></i>Skills: HTML,CSS, JS</h4></a></li>
+				        </ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--  Small view of company profiles-->
+<span class = "visible -xs visible-s hidden-sm hidden-md hidden-lg"style = "margin-right: -80px; margin-left: -80px;">
+<div class="row companyBlocks">
+	<div id="profileHeader" class="col-xs-12">
+		<div class="profilePicture">
+			<img src="img/companyPictures/gc-small.png" class="img-rounded">
+		</div>
+		<div href="#/companyInfo" class="companyProfileInfo">
+				<div id="nameBorder">
+          <h3>Grand Circus</h3>
+			</div>
+		<div class = "visible -xs visible-s hidden-sm hidden-md hidden-lg"style = "margin-right: -70px; margin-left: -30px; margin-top: 10px;">
+			<ul style="margin-right: -20px; margin-left: -80px;">
+					<li><a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
+			    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			    <li><a href="https://www.github.com"><i class="fa fa-github fa-2x"></i></a></li>
+			</ul>
+		</div>
+		</div>
+	</div>
+</div>
+</span>
+<div data-post-dir> </div>
+  <!-- submit button to prompt add new company form -->
+	<!-- new modal test -->
+	<div id="container">
+	<!-- container for both left and right seats -->
+	  <div id="wrapper">
+	<!-- Add new company -->
+	      <div id="addNewCompany">
+	        <div class="col-xs-6">
+	          <div id="left-seats">
+	                <div class="btn-group-lg" role="group" aria-label="addNewInfo">
+	                  <!-- Trigger the modal with a button -->
+	                  <button type="button" class="newInfBtn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">+</button>
+	                </div>
+	          </div>
+	        </div>
+	      </div>
+	  </div>
+	</div>
+	<!--New info form!-->
+	<div class="container">
+	  <!-- Modal -->
+	  <div >
+	    <div class="modal-dialog">
+
+	      <!-- Modal content-->
+	      <div >
+	        <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal">&times;</button>
+	          <h2 class="modal-title">Add a Company:</h2>
+	          <h4>Add all the info you need to get ahead.</h4>
+	        </div>
+
+	        <div class="modal-body">
+	          <div id="envelope">
+
+	            <form id="theform" action="" method="post">
+	              <label>Company Name:</label>
+					<input type="text" placeholder="Company" ng-model="newCompany">
+	              <label>Status:</label>
+	                <input name="text" placeholder="Status of Application" ng-model="newStatus" type="text">
+	              <label>Size:</label>
+	                <input name="text" placeholder="Size of company" ng-model="newSize" type="text">
+	              <label>Location:</label>
+	                <input name="text" placeholder="Location of Company" ng-model="newLocation" type="text">
+	              <label>Job Description:</label>
+	                <input name="text" placeholder="Job Description" ng-model="newJobDescription" type="text">
+	              <label>Salary:</label>
+	                <input name="text" placeholder="Salary" ng-model="newSalary" type="text">
+	              <label>Wants:</label>
+	                <input name="text" placeholder="Wants" ng-model="newWants" type="text">
+	              <label>Bonus Skills:</label>
+	                <input name="text" placeholder="Bonus Skills" ng-model="newBonusSkills" type="text">
+	              <label>Industry:</label>
+	                <input name="text" placeholder="Type of Industry" ng-model="newIndustry" type="text">
+	              <label>Product:</label>
+	                <input name="text" placeholder="Product of Company" ng-model="newProduct" type="text">
+	            </form>
+
+	          </div>
+	        </div>
+	        <div class="modal-footer">
+	          <button type="button" ng-click="addCompany()" value="add" id="submitNewInfoButton" class="btn btn-submit" data-dismiss="modal">Submit</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="addNewCompany">
+		<div data-coke ng-repeat="company in companies track by $index"></div>
+	</div>
+</body>

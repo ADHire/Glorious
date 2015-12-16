@@ -1,0 +1,33 @@
+/*LANDING CSS*/
+
+
+#foo {
+	height: 1200px;
+	width: 1400px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	opacity: .4;
+}
+
+#googleLoginParent {
+	height: 25em;
+	width: 80%;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	background-color: white;
+	opacity: .85;
+	text-align: center;
+}
+.googleLoginInput {
+	padding-top: 1em;
+}
+/*End of Laning css*/
+

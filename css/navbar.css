@@ -1,0 +1,77 @@
+#navbar {
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  width: 350px;
+  height: 100%;
+  clear: both;
+  background-color: #112938;
+  padding: 0 40px;
+}
+#navbar.hidden {
+  visibility: hidden;
+}
+#navbar.right {
+  right: 100%;
+  margin-right: 0px;
+  text-align: right;
+}
+#navbar ul {
+  list-style: none;
+  padding: 0;
+  margin-left: auto;
+  width: 100%;
+}
+#navbar ul li a {
+  text-decoration: none;
+  display: block;
+  color: #FEFEFE;
+  line-height: 4em;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-property: color;
+  -moz-transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-property: color;
+  -ms-transition-duration: 0.1s;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-property: color;
+  -o-transition-duration: 0.1s;
+  -o-transition-timing-function: ease-out;
+  transition-property: color;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  direction: ltr;
+}
+.fa{
+padding: .75em;
+}
+#navbar ul li a:hover {
+  color: #DC635F;
+}
+/*general look and position of icon*/
+#navbar_icon {
+  z-index: 1000;
+  position: fixed;
+  top: 27px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #333333;
+  background: url(../img/icons/icon.png) no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
+#navbar_icon.hidden {
+  visibility: hidden;
+}
+#navbar_icon.right {
+  right: 10px;
+}
+#navbar_icon.left {
+  left: 10px;
+}

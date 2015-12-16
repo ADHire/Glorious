@@ -1,0 +1,27 @@
+<div class="row companyBlocks">
+	<div id="profileHeader" class="col-xs-12">
+		<div class="profilePicture">
+			<img src="../../img/profilePictures/taylorSwift-small.jpg" class="img-rounded">
+		</div>
+
+		<div class="profileNameLink">
+			<a href="#/company/{{$index}}">
+				<div id="nameBorder">
+          <h3>{{company.name || "company name"}}</h3>
+			</div></a>
+			<span class = "visible-sm visible-md visible-lg hidden-s">
+				<ul>
+			    <li><a href="https://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a></li>
+			    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a></li>
+			    <li><a href="https://www.github.com"><i class="fa fa-github fa-3x"></i></a></li>
+			</ul>
+		</span>
+		<span class = "visible-s hidden-sm hidden-md hidden-lg"style = "margin-right: -80px; margin-left: -80px;">
+			<ul style="margin-right: -80px; margin-left: -80px;">			    <li><a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
+			    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
+			    <li><a href="https://www.github.com"><i class="fa fa-github fa-2x"></i></a></li>
+			</ul>
+		</span>
+		</div>
+	</div>
+</div>

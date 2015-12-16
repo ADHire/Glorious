@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Project Title -->
+    <title>PrepMe</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Font Awesome Glyphicon CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+
+		<!-- Nav CSS -->
+		<link href="css/navbar.css" rel="stylesheet" type="text/css">
+
+    <!-- editCompanyInfo CSS -->
+    <link href="css/editCompanyInfo.css" rel="stylesheet" type="text/css">
+
+    <!-- Login CSS -->
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body ng-app="prepModule"> <!-- Applying prepModule to the body -->
+
+  <ng-view></ng-view> <!-- ng-View and ng-Route working together to display views -->
+
+  <nav id="navbar">
+  	<ul id="sidebar-menu">
+  		<li><a class="nav-icon" href="#/profile" data-toggle="collapse" >My Profile<i class="fa fa-user fa-3x"></i></a></li>
+  		<li><a class="nav-icon" href="#/myPrep">My Prep<i class="fa fa-pencil-square-o fa-3x"></i></a></li>
+  		<li><a class="nav-icon" href="#/companyLists">Companies<i class="fa fa-building-o fa-3x"></i></a>
+      <li><a class="nav-icon" onclick="signOut()">Logout<i class="fa fa-sign-out fa-3x"></i></a></li>
+  	</ul>
+  </nav>
+
+
+
+	<!-- JavaScript/JQuery/Angular CDN's -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script> <!--angylar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script> <!--route -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script> <!--ngStorage -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <!--jQuery easing for animation-->
+    
+    <!-- Bootstrap JS min -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Our Javascript -->
+    <script src="js/addNewCompanyFormStyle.js"></script>
+	  <script src="js/jquery.navbar.js"></script>
+    <script src="js/prepModule.js"></script>
+   <!-- <script src="js/landing.js"></script> -->
+
+
+
+  <!-- Google+ API nonsense -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id" content="499389684761-rgv5n1qo8rev89egdde05da41u78edvv.apps.googleusercontent.com">
+  <script src="js/googleSignIn.js"></script>
+</body>
+</html>

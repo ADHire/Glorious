@@ -1,0 +1,52 @@
+form{
+  width:70%;
+  margin:4% 15%;
+}
+
+input[type=text]{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width:100%;
+  padding: 15px;
+  border-radius:5px;
+  border:1px solid #2396CE;
+}
+
+input[type=password]{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width:100%;
+  padding: 15px;
+  border-radius:5px;
+  border:1px solid #2396CE;
+}
+input[type=submit]
+{
+  margin-bottom: 20px;
+  width:50%;
+  padding: 15px;
+  border-radius:5px;
+  border:1px solid #2396CE;
+  background-color: #2396CE;
+  color: aliceblue;
+  font-size:16px;
+  cursor:pointer;
+}
+
+textarea{
+  width:100%;
+  padding: 15px;
+  margin-top: 10px;
+  border:1px solid #2396CE;
+  border-radius:5px;
+  margin-bottom: 20px;
+  resize:none;
+}
+input[type=text]:focus,textarea:focus {
+  border-color: #2396CE;
+}
+#addNewCompany{
+ position: fixed;
+ bottom: 0px;
+ right: 0px;
+}

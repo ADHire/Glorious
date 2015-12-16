@@ -1,0 +1,120 @@
+html, body{
+   overflow-x: hidden;
+   height: 100%;
+}
+body {
+  background: #A7C5CD;
+  position: relative;
+}
+h3 small{
+  color: white;
+}
+h3:hover{
+  color: #DC635F;
+}
+a ul li{
+    text-decoration-style: none;
+}
+/*LANDING CSS*/
+.landing {
+	visibility: hidden;
+	height: 150px;
+	width: 150px;
+}
+#test {
+	opacity: .5;
+	margin: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+/*End of Laning css*/
+/* Big Quickview area*/
+h4{
+	border: 2px solid white;
+	background-color: rgba(0,0,0,.2)
+}
+h4:hover{
+  color: #DC635F;
+}
+ul.socialStuffs{
+	padding-left: 0;
+}
+li .socialMediaIcon {
+  padding-right: 10px;
+}
+/*end of new Div Template View*/
+.profilePicture {
+	width: 45%;
+	margin: 0 auto;
+	float: left;
+}
+.companyProfileInfo {
+	width: 45%;
+	margin: 0 auto;
+	float: left;
+}
+.companyProfileInfo h3 {
+	margin-left: 15px;
+	vertical-align: top;
+	display: inline;
+	font-size: 1.5em;
+}
+.companyProfileInfo ul {
+	padding-left: 0px;
+	vertical-align: bottom;
+}
+.companyProfileInfo li {
+	display: inline;
+	padding: 6px;
+}
+#nameBorder {
+	position: relative;
+	margin: 0 auto;
+	padding: .75em;
+	color: white;
+	background-color: rgba(0,0,0,.2);
+	min-height: 40px;
+}
+#nameBorder:before {
+	position: absolute;
+	top: 5px;
+	left: -22px;
+	content: '';
+	width: 0;
+	height: 0;
+	margin: -5px 0 0;
+	border-right: solid 22px rgba(0,0,0,.2);
+	border-bottom: solid 22px transparent;
+	border-top: solid 22px transparent;
+}
+#profileRow {
+	margin-top: 10px;
+	height: 150px;
+}
+#profileRow h4 {
+	margin-top: 0px;
+	margin-right: 15px;
+	vertical-align: center;
+	text-align: center;
+	position: relative;
+	padding: 10px;
+	color: white;
+	background-color: rgba(0,0,0,.2);
+	min-height: 40px;
+}
+#profileRow p {
+	margin: 10px 15px 10px 15px;
+	text-align: vertical right;
+}
+.companyBlocks {
+	margin-top: 10px;
+}
+div.newCompanyTemplate:nth-of-type(odd) {
+	background-color: #A7C5CD;
+}
+div.newCompanyTemplate:nth-of-type(even) {
+	background-color: #17A5A4;
+}
