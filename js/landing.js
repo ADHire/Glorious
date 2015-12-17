@@ -1,7 +1,7 @@
 var app = angular.module('prepModule');
 
 app.controller('showImages', function($scope, $http, loginServ){
-$("#navbar_icon").css("visibility","hidden"); // This uncommented means the hamburger shows up. 
+$("#navbar_icon").css("visibility","hidden"); // This uncommented means the hamburger shows up.
     console.log("showImages.js DO IT!");
 	$scope.pictures = [];
 	$http({
@@ -38,6 +38,6 @@ $("#navbar_icon").css("visibility","hidden"); // This uncommented means the hamb
 		}
 	}
 
-	
-  	
+
+
 });
