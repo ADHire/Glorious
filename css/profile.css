@@ -3,7 +3,7 @@ html, body{
    height: 100%;
 }
 body {
-  background: #A7C5CD;
+  /*background: #F27274;*/
   position: relative;
 }
 
@@ -16,7 +16,9 @@ h4{
 a ul li{
     text-decoration-style: none;
 }
-
+#iconHover:hover {
+  color:#F7D3A8;
+}
 .fa:hover{
   color: #DC635F;
 }
@@ -30,10 +32,6 @@ bottom:0;
 right:0;
 z-index: 1000;
 };
-
-on HTML, label the button #painbtn
-
-
 
 /*LANDING CSS*/
 .landing {
@@ -130,8 +128,10 @@ li .socialMediaIcon {
 	margin: 10px 15px 10px 15px;
 	text-align: vertical right;
 }
-.companyBlocks {
-	margin-top: 10px;
+
+/*adds pretty alternating colors*/
+.rowForProfile{
+  margin-top: -10px;
 }
 div.newCompanyTemplate:nth-of-type(odd) {
 	background-color: #A7C5CD;

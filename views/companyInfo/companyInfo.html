@@ -1,30 +1,75 @@
-<div id="profileHeader">
+<!-- Big View of company profiles-->
+<div class="newCompanyTemplate">
 
-<div class="row">
-	<div id="profileHeader" class="col-xs-12">
-		<div class="profilePicture">
-			<img src="../../img/companyPictures/gc-small.png" class="img-rounded">
-		</div>
+<div class = "visible-sm visible-md visible-lg hidden-s">
+<div class="row companyBlocks">
+  <div id="profileHeader" class="col-xs-12">
+    <div class="profilePicture">
+      <img src="img/companyPictures/gc-small.png" height="200" width="200" class="img-rounded">
+      <ul class="socialStuffs">
+        <a href="https://www.twitter.com"><i class="fa fa-twitter fa-3x"></i></a> <a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-3x"></i></a><a href="https://www.github.com"><i class="fa fa-github fa-3x"></i></a>
+      </ul>
+    </div>
 
-		<div class="profileNameLink">
-			<div id="nameBorder">
-				<h3><small>Grand</small>Circus</h3>
-			</div>
-			<ul>
-			    <li><a href="https://twitter.com/GrandCircusCo"><i class="fa fa-twitter fa-3x"></i></a></li>
-			    <li><a href="https://www.linkedin.com/company/grand-circus"><i class="fa fa-linkedin fa-3x"></i></a></li>
-			    <li><a href="https://www.github.com"><i class="fa fa-github fa-3x"></i></a></li>
-			</ul>
-		</div>
-	</div>
+    <div class="companyProfileInfo">
+      <a href="#/companyInfo">
+        <div id="nameBorder">
+        <h3>Grand Circus</h3>
+        </div>
+      </a>
+
+      <div class="quickViewOfInfo row">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-6">
+              <ul style="color:white;"> <!-- Add/change in CSS-->
+                <li><a href="#/companyInfo"><h4><i class="fa fa-hourglass-start"></i>Status: Sent an email</h4></a></li>
+                <li><a href="#/companyInfo"><h4><i class="fa fa-pencil-square-o"></i></i>Next Step: Follow up</h4></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul style="color:white;">
+                <li><a href="#/companyInfo"><h4><i class="fa fa-map-marker"></i>Location: Detroit, Michgan</h4><a></li>
+                <li><a href="#/companyInfo"><h4><i class="fa fa-tasks"></i>Skills: HTML,CSS, JS</h4></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+<!--  Small view of company profiles-->
+<span class = "visible -xs visible-s hidden-sm hidden-md hidden-lg"style = "margin-right: -80px; margin-left: -80px;">
+<div class="row companyBlocks">
+<div id="profileHeader" class="col-xs-12">
+  <div class="profilePicture">
+    <img src="img/companyPictures/gc-small.png" class="img-rounded">
+  </div>
+  <div href="#/companyInfo" class="companyProfileInfo">
+      <div id="nameBorder">
+        <h3>Grand Circus</h3>
+    </div>
+  <div class = "visible -xs visible-s hidden-sm hidden-md hidden-lg"style = "margin-right: -70px; margin-left: -30px; margin-top: 10px;">
+    <ul style="margin-right: -20px; margin-left: -80px;">
+        <li><a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>
+        <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-2x"></i></a></li>
+        <li><a href="https://www.github.com"><i class="fa fa-github fa-2x"></i></a></li>
+    </ul>
+  </div>
+  </div>
 
-	<hr>
+</div>
+</div>
+</span>
+
+<!-- End of profile info -->
 
 <div class="row" class="col-xs-12">
 		<div id="profileRow">
-			<h4 class="profileHead col-xs-4" contenteditable="true">Job Description</h4>
-			<p class="profileText col-x-8" contenteditable="">Becoming the most amazing instructor this camp has ever seen.</p>
+			<h4 class="profileHead col-xs-4" contenteditable="true">Status</h4>
+			<p class="profileText col-x-8" contenteditable="">{{status}}</p>
 		</div>
 </div>
 
@@ -32,8 +77,8 @@
 
 <div class="row" class="col-xs-12">
 	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Bio</h4>
-		<p class="profileText col-x-8" contenteditable="true">Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.</p>
+		<h4 class="profileHead col-xs-4" contenteditable="true">Location</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{location}}</p>
 	</div>
 </div>
 
@@ -41,16 +86,62 @@
 
 <div class="row" class="col-xs-12">
 	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Bio</h4>
-		<p class="profileText col-x-8" contenteditable="true">Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.</p>
+		<h4 class="profileHead col-xs-4" contenteditable="true">Description</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{jobDesc}}</p>
 	</div>
 </div>
 
 <hr>
 
-<div ng-controller="routeCtrl">
-	<button ng-click="loadData()">Load</button>
-	<button ng-click="saveData()">Save</button>
-	<br>
-	Some message: {{message}} //add service
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Size</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{size}}</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Wants</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{wants}}</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Salary</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{salary}}</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Industry</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{industry}}</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Bonus Skills</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{bonusSkills}}</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="row" class="col-xs-12">
+	<div id="profileRow">
+		<h4 class="profileHead col-xs-4" contenteditable="true">Product</h4>
+		<p class="profileText col-x-8" contenteditable="true">{{product}}</p>
+	</div>
+</div>
 </div>
