@@ -6,15 +6,24 @@ body {
   background: #A7C5CD;
   position: relative;
 }
-h3 small{
-  color: white;
-}
+
 h3:hover{
   color: #DC635F;
+}
+h4{
+  color:white;
 }
 a ul li{
     text-decoration-style: none;
 }
+.fa:hover{
+  color: #DC635F;
+
+}
+
+
+
+
 /*LANDING CSS*/
 .landing {
 	visibility: hidden;
@@ -77,6 +86,7 @@ li .socialMediaIcon {
 	color: white;
 	background-color: rgba(0,0,0,.2);
 	min-height: 40px;
+  text-align: center;
 }
 #nameBorder:before {
 	position: absolute;
