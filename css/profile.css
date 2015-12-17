@@ -16,11 +16,22 @@ h4{
 a ul li{
     text-decoration-style: none;
 }
+
 .fa:hover{
   color: #DC635F;
-
 }
 
+.newInfoBtn {
+font-size: 10px;
+margin-bottom: 10px;
+margin-right: 20px;
+position:fixed;
+bottom:0;
+right:0;
+z-index: 1000;
+};
+
+on HTML, label the button #painbtn
 
 
 
@@ -127,4 +138,12 @@ div.newCompanyTemplate:nth-of-type(odd) {
 }
 div.newCompanyTemplate:nth-of-type(even) {
 	background-color: #17A5A4;
+}
+.rowForProfile:nth-of-type(odd){
+	background-color:#f29698 ;
+	height:280px;
+}
+.rowForProfile:nth-of-type(even){
+	background-color:#F27274;
+	height:280px;
 }
