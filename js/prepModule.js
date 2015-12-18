@@ -36,7 +36,7 @@ app.config(function($routeProvider) {
 
 app.factory('loginServ', function() {
 
-  var google = {
+   var google = {
     name: "Google",
     status: "Hiring",
     size: "Massive",
@@ -47,9 +47,7 @@ app.factory('loginServ', function() {
     bonusSkills: "PHP",
     industry: "Tech",
     product: "Awesome Code",
-    photo_url: "../img/icons/google-icon-small.png",
-    nextStep: "Schedule a call"
-
+    photo_url: "../../img/icons/google-icon-small.png"
   };
   var instagram = {
     name: "Instagram",
@@ -62,9 +60,7 @@ app.factory('loginServ', function() {
     bonusSkills: "Photoshop",
     industry: "Tech",
     product: "online mobile photo-sharing, video-sharing and social networking service that enables its users to take pictures and videos, and share them on a variety of social networking platforms, such as Facebook, Twitter, Tumblr and Flickr.",
-    photo_url: "../img/icons/instagram-icon-small.png",
-    nextStep: "Respond to email"
-
+    photo_url: "../../img/icons/instagram-icon-small.png"
   };
   var nutshell = {
     name: "Nutshell",
@@ -77,8 +73,7 @@ app.factory('loginServ', function() {
     bonusSkills: "C",
     industry: "Tech",
     product: "Customer relationship management platform.",
-    photo_url: "../img/icons/nutshell-icon-small.png",
-    nextStep: "Call at 2:30pm"
+    photo_url: "../../img/icons/nutshell-icon-small.png"
   };
   var apple = {
     name: "Apple",
@@ -91,24 +86,20 @@ app.factory('loginServ', function() {
     bonusSkills: "Bachelor’s Degree (in Computer Science or equivalent experience)",
     industry: "Tech",
     product: "Nearly everything",
-    photo_url: "../img/icons/apple-icon-small.png",
-    nextStep: "Meet for lunch 3/12"
-
+    photo_url: "../../img/icons/apple-icon-small.png"
   };
   var grandCircus = {
     name: "Grand Circus",
     status: "Waiting on interview",
     size: "Small",
-    location: "Detroit, MI",
+    location: "Woodward Ave, Detroit, MI",
     jobDesc: "Becoming the most amazing instructor this camp has ever seen.",
     salary: "$1,000,000",
     wants: "Godly coders",
     bonusSkills: "Being able to crush your work",
     industry: "Tech",
     product: "Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.",
-    photo_url: "../img/icons/grandCircus-icon-small.png",
-    nextStep: "Send initial email"
-
+    photo_url: "../../img/icons/grandCircus-icon-small.png"
   };
 
   var companies = [grandCircus, google, apple, instagram, nutshell];
@@ -172,6 +163,7 @@ app.controller("routeCtrlShow", function($scope, $routeParams, $localStorage, $h
     newCompanyName.bonusSkills = $scope.newBonusSkills;
     newCompanyName.industry = $scope.newIndustry;
     newCompanyName.product = $scope.newProduct;
+    newCompanyName.photo_url = $scope.newPicture;
 
     $scope.companies.push(newCompanyName);
   };
