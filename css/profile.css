@@ -61,9 +61,10 @@ strong {
 
 #submitNewInfoButton{
   background-color: #112938;
+  color: white;
 }
 #submitNewInfoButton:hover{
-  color: #DC635F;
+  color: white;
 }
 .tilepurple{
   background-color: #B27DF4;
