@@ -40,66 +40,75 @@ app.factory('loginServ', function() {
     name: "Google",
     status: "Hiring",
     size: "Massive",
-    location: "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+    location: "Mountain View, CA",
     jobDesc: "Awesome",
     salary: "$1,000,000",
     wants: "You",
     bonusSkills: "PHP",
     industry: "Tech",
     product: "Awesome Code",
-    photo_url: "../img/icons/google-icon-small.png"
+    photo_url: "../img/icons/google-icon-small.png",
+    nextStep: "Schedule a call"
+
   };
   var instagram = {
     name: "Instagram",
     status: "Hiring",
     size: "Huge",
-    location: "1 Hacker Way, Menlo Park, CA 94025",
+    location: "Menlo Park, CA",
     jobDesc: "Manage and develop a small team of designers. This requires setting clear goals, managing project loads and allocating designers accordingly, ensuring deadlines are met and setting up team members for overall success. Guide the team to develop best practices for ensuring a high bar of quality. Collaborate cross-functionally with product management, engineering, user research and communication design to ensure a smooth product development process. Recruit new designers and actively participate in the hiring process. Roll up your sleeves and contribute as a designer for at least one project. Execute in a fast-paced and highly fluid environment.",
     salary: "$1,000,000",
     wants: "Minimum 2 years industry experience in a management or leadership role on a Design team. Minimum 5 years of design experience. Included design portfolio with examples of interactions and visuals across web applications (not just static websites). Experience in product strategy. Organizational and analytical experience",
     bonusSkills: "Photoshop",
     industry: "Tech",
     product: "online mobile photo-sharing, video-sharing and social networking service that enables its users to take pictures and videos, and share them on a variety of social networking platforms, such as Facebook, Twitter, Tumblr and Flickr.",
-    photo_url: "../img/icons/instagram-icon-small.png"
+    photo_url: "../img/icons/instagram-icon-small.png",
+    nextStep: "Respond to email"
+
   };
   var nutshell = {
     name: "Nutshell",
     status: "No Positions Open",
     size: "Small",
-    location: "212 South Fifth Ave., Ann Arbor, MI 48104",
+    location: "Ann Arbor, MI",
     jobDesc: "Working with our web and mobile teams to build (JSON API-compatible) REST endpoints that power new interfaces. You’ll connect Nutshell with new integrations and work with the data we store in MySQL and Solr. And with our Vagrant and Jenkins stack, you'll probably deploy tested code to production on your first day.",
     salary: "$1,000,000",
     wants: "PHP development experience. Working knowledge of modern PHP frameworks, including Symfony2. Strong background in SQL and relational databases. Background in API design. Experience with unit testing, continuous integration. Passion about fit and finish of user interfaces.",
     bonusSkills: "C",
     industry: "Tech",
     product: "Customer relationship management platform.",
-    photo_url: "../img/icons/nutshell-icon-small.png"
+    photo_url: "../img/icons/nutshell-icon-small.png",
+    nextStep: "Call at 2:30pm"
   };
   var apple = {
     name: "Apple",
     status: "Accepting Resumes",
     size: "Huge",
-    location: "1 Infinite Loop, Cupertino, CA 95014",
+    location: "Cupertino, CA",
     jobDesc: "Imagine what you could do here. At Apple, great ideas have a way of becoming great products, services, and customer experiences very quickly. Bring passion and dedication to your job and there's no telling what you could accomplish.",
     salary: "$1,000,000",
     wants: "Strong object-oriented programming skills. Experience with relational databases and SQL. Knowledge of Ruby on Rails and JavaScript. Scripting skills in Perl, Ruby, UNIX shells. Strong analytical and problem solving skills. Excellent written and verbal communication skills",
     bonusSkills: "Bachelor’s Degree (in Computer Science or equivalent experience)",
     industry: "Tech",
     product: "Nearly everything",
-    photo_url: "../img/icons/apple-icon-small.png"
+    photo_url: "../img/icons/apple-icon-small.png",
+    nextStep: "Meet for lunch 3/12"
+
   };
   var grandCircus = {
     name: "Grand Circus",
     status: "Waiting on interview",
     size: "Small",
-    location: "1570 Woodward Ave., Detroit, MI 48226",
+    location: "Detroit, MI",
     jobDesc: "Becoming the most amazing instructor this camp has ever seen.",
     salary: "$1,000,000",
     wants: "Godly coders",
     bonusSkills: "Being able to crush your work",
     industry: "Tech",
     product: "Grand Circus is passionate about training people for amazing careers in tech and helping local businesses grow by hiring local tech superstars. Our bootcamps serve both purposes: we give people critical skills for tech jobs while introducing them to businesses looking for talent.",
-    photo_url: "../img/icons/grandCircus-icon-small.png"
+    photo_url: "../img/icons/grandCircus-icon-small.png",
+    nextStep: "Send initial email"
+
   };
 
   var companies = [grandCircus, google, apple, instagram, nutshell];
@@ -119,6 +128,10 @@ app.controller("routeCtrlShow", function($scope, $routeParams, $localStorage, $h
     $scope.taylorEducation = "Grand Circus, Detroit";
     $scope.taylorJobTitle = "Greatest female ever";
     $scope.taylorSkills = "Everything";
+    $scope.taylorNextStep = "Date Adam";
+    $scope.taylorSalary = "1 million $$$";
+    $scope.taylorStatus = "Trouble, trouble";
+    $scope.taylorLocation = "In our hearts";
 
   // Login that displays info after correct information is passed/checked
   $scope.ballinLogIn=function() {
@@ -184,8 +197,8 @@ app.controller("routeCtrlShow", function($scope, $routeParams, $localStorage, $h
   var current = 0;
   function myTimer() {
     var tag = $scope.pictures[current];
-    var container = document.getElementById("foo");
-    container.src=tag;
+    // var container = document.getElementById("foo");
+    // container.src=tag;
 
     //If we're at our max (minus 1 because of 0 based index) then reset
     if (current == $scope.pictures.length - 1) {
@@ -224,7 +237,7 @@ app.controller("routeCtrlShow", function($scope, $routeParams, $localStorage, $h
       scope:  true,
       templateUrl:'views/companyLists/newCompanyListTemplate.html',
       replace:true,
-      link: function (scope, el, attrs) {
-      }
+      // link: function (scope, el, attrs) {
+      // }
     };
   });

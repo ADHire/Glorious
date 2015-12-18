@@ -12,7 +12,7 @@
 			<div class="companyProfileInfo">
 					<a href="#/company/{{$index}}/#profileHe">
 							<div id="nameBorder">
-		          <h3>{{company.name || "company name"}}</h3>
+		          <h3>{{company.name || "company name"}} </h3>
 						</div>
 					</a>
 				<div class="quickViewOfInfo row">
@@ -20,14 +20,14 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<ul > <!-- Add/change in CSS-->
-									<li class="quickView"><a href="#/companyInfo"><h4><i class="fa fa-hourglass-start"></i>Status: Sent an email</h4></a></li>
-									<li><a href="#/companyInfo"><h4><i class="fa fa-pencil-square-o"></i></i>Next Step: Follow up</h4></a></li>
+									<li class="quickView"><a href="#/company/{{$index}}/#profileHe"><h4><i class="fa fa-hourglass-start"></i>Status: {{company.status}}</h4></a></li>
+									<li><a href="#/company/{{$index}}/#profileHe"><h4><i class="fa fa-pencil-square-o"></i></i>Next Step: {{company.nextStep}}</h4></a></li>
 								</ul>
 							</div>
 							<div class="col-sm-6">
 								<ul style="color:white;">
-									<li><a href="#/companyInfo"><h4><i class="fa fa-map-marker"></i>Location: Detroit, Michgan</h4><a></li>
-									<li><a href="#/companyInfo"><h4><i class="fa fa-tasks"></i>Skills: HTML,CSS, JS</h4></a></li>
+									<li><a href="#/company/{{$index}}/#profileHe"><h4><i class="fa fa-map-marker"></i>Location:{{company.location}}</h4><a></li>
+									<li><a href="#/company/{{$index}}/#profileHe"><h4><i class="fa fa-tasks"></i>Salary: {{company.salary}}</h4></a></li>
 								</ul>
 							</div>
 						</div>
@@ -44,10 +44,12 @@
 		<div class="profilePicture">
 			<img src="img/companyPictures/gc-small.png" class="img-rounded">
 		</div>
-		<div href="#/companyInfo" class="companyProfileInfo">
-				<div id="nameBorder">
-					<h3>{{company.name || "company name"}}</h3>
-			</div>
+		<div class="companyProfileInfo">
+				<a href="#/company/{{$index}}/#profileHe">
+						<div id="nameBorder">
+						<h3>{{company.name || "company name"}} </h3>
+					</div>
+				</a>
 		<div class = "visible -xs visible-s hidden-sm hidden-md hidden-lg"style = "margin-right: -70px; margin-left: -30px; margin-top: 10px;">
 			<ul style="margin-right: -20px; margin-left: -80px;">
 					<li><a href="https://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a></li>

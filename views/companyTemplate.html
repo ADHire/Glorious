@@ -21,13 +21,13 @@
           <div class="row">
             <div class="col-sm-6">
               <ul style="color:white;"> <!-- Add/change in CSS-->
-                <li><a href="#/companyInfo"><h4><i class="fa fa-hourglass-start"></i>Status: Sent an email</h4></a></li>
+                <li><a href="#/companyInfo"><h4><i class="fa fa-hourglass-start"></i>Status: {{status}}</h4></a></li>
                 <li><a href="#/companyInfo"><h4><i class="fa fa-pencil-square-o"></i></i>Next Step: Follow up</h4></a></li>
               </ul>
             </div>
             <div class="col-sm-6">
               <ul style="color:white;">
-                <li><a href="#/companyInfo"><h4><i class="fa fa-map-marker"></i>Location: Detroit, Michgan</h4><a></li>
+                <li><a href="#/companyInfo"><h4><i class="fa fa-map-marker"></i>Location: {{location}}</h4><a></li>
                 <li><a href="#/companyInfo"><h4><i class="fa fa-tasks"></i>Skills: HTML,CSS, JS</h4></a></li>
               </ul>
             </div>
@@ -65,81 +65,66 @@
 
 <hr>
 
-<div class="row" class="col-xs-12">
-		<div id="profileRow">
-			<h4 class="profileHead col-xs-4" contenteditable="true">Status</h4>
-			<p class="profileText col-x-8" contenteditable="">{{status}}</p>
-		</div>
-</div>
+<div class="container">
 
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Location</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{location}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Description</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{jobDesc}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Size</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{size}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Wants</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{wants}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Salary</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{salary}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Industry</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{industry}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Bonus Skills</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{bonusSkills}}</p>
-	</div>
-</div>
-
-<hr>
-
-<div class="row" class="col-xs-12">
-	<div id="profileRow">
-		<h4 class="profileHead col-xs-4" contenteditable="true">Product</h4>
-		<p class="profileText col-x-8" contenteditable="true">{{product}}</p>
-	</div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="tileblue" height="200">
+        <h3 class="title">Status</h3>
+        <p>{{status}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tilegrey">
+        <h3 class="title">Location</h3>
+        <p>{{location}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tileorange">
+        <h3 class="title">Description</h3>
+        <p>{{jobDesc}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="tilegrey">
+        <h3 class="title">Size</h3>
+        <p>{{size}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tileblue">
+        <h3 class="title">Wants</h3>
+        <p>{{wants}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tileblue">
+        <h3 class="title">Product</h3>
+        <p>{{product}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="tileorange">
+        <h3 class="title">Salary</h3>
+        <p>{{salary}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tilered">
+        <h3 class="title">Industry</h3>
+        <p>{{industry}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="tileblue">
+        <h3 class="title">Skills</h3>
+        <p>{{bonusSkills}}</p>
+      </div>
+    </div>
+  </div>
 </div>

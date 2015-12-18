@@ -3,7 +3,6 @@ html, body{
    height: 100%;
 }
 body {
-  background: #F27274;
   position: relative;
 }
 
@@ -16,12 +15,72 @@ h4{
 a ul li{
     text-decoration-style: none;
 }
+
+p {
+  font-size: 1.5em;
+}
+/*Centers all images*/
+.profilePicture{
+  margin: 15px 0 auto;
+  text-align: center;
+}
+
+.quickViewOfInfo{
+  height: 200px;
+}
+/*colors to tiles*/
+
+.tilepurple{ background-color: #B27DF4;}
+.tilered {background-color:#5F2A1E;}
+.tileorange {background-color:#DE2D38;}
+.tilegrey {background-color:#C5C5C6;}
+.tileblue {background-color: #5CB5C6;}
+
+
+body {
+	font-family: 'Open Sans', "Segoe UI";
+	line-height: 1.5;
+	/*font-weight: 400;*/
+  color: white;
+}
+
+p, span, a, ul, li, button {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-weight: 300;
+}
+
+strong {
+  font-weight: 400;
+}
+
+.tile {
+  width: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+/*end of colors to tiles*/
+
 #iconHover:hover {
   color:#F7D3A8;
 }
 .fa:hover{
   color: #DC635F;
 }
+
 
 .newInfoBtn {
 font-size: 10px;
@@ -52,7 +111,7 @@ z-index: 1000;
 /* Big Quickview area*/
 h4{
 	border: 2px solid white;
-	background-color: rgba(0,0,0,.2)
+	background-color: #112938;
 }
 h4:hover{
   color: #DC635F;
@@ -93,7 +152,7 @@ li .socialMediaIcon {
 	margin: 0 auto;
 	padding: .75em;
 	color: white;
-	background-color: rgba(0,0,0,.2);
+	background-color: #112938;
 	min-height: 40px;
   text-align: center;
 }
@@ -105,7 +164,7 @@ li .socialMediaIcon {
 	width: 0;
 	height: 0;
 	margin: -5px 0 0;
-	border-right: solid 22px rgba(0,0,0,.2);
+	border-right: solid 22px #112938;
 	border-bottom: solid 22px transparent;
 	border-top: solid 22px transparent;
 }
@@ -121,7 +180,7 @@ li .socialMediaIcon {
 	position: relative;
 	padding: 10px;
 	color: white;
-	background-color: rgba(0,0,0,.2);
+	background-color: #112938;
 	min-height: 40px;
 }
 #profileRow p {
@@ -130,7 +189,7 @@ li .socialMediaIcon {
 }
 
 /*adds pretty alternating colors*/
-.rowForProfile{
+/*.rowForProfile{
   margin-top: -10px;
 }
 div.newCompanyTemplate:nth-of-type(odd) {
@@ -146,4 +205,4 @@ div.newCompanyTemplate:nth-of-type(even) {
 .rowForProfile:nth-of-type(even){
 	background-color:#F27274;
 	height:280px;
-}
+}*/
