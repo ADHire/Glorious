@@ -4,20 +4,41 @@ html, body{
 }
 body {
   position: relative;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "playfair display";
 }
 
 h3:hover{
   color: #DC635F;
 }
-h4{
-  color:white;
-}
+
 a ul li{
     text-decoration-style: none;
 }
 
-p {
+p, span, a, ul, li, button {
+  font-size: 2em;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+strong {
+	font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
+	font-weight: 300;
+}
+p{
   font-size: 1.5em;
+}
+
+strong {
+  font-weight: 400;
 }
 /*Centers all images*/
 .profilePicture{
@@ -30,48 +51,51 @@ p {
 }
 /*colors to tiles*/
 
-.tilepurple{ background-color: #B27DF4;}
-.tilered {background-color:#5F2A1E;}
-.tileorange {background-color:#DE2D38;}
-.tilegrey {background-color:#C5C5C6;}
-.tileblue {background-color: #5CB5C6;}
-
-
-body {
-	font-family: 'Open Sans', "Segoe UI";
-	line-height: 1.5;
-	/*font-weight: 400;*/
-  color: white;
+/*form, make it pretty*/
+.modal-header h2{
+  color: black;
+}
+.modal-header h3{
+  color: black;
 }
 
-p, span, a, ul, li, button {
-	font-family: inherit;
-	font-size: inherit;
-	font-weight: inherit;
-	line-height: inherit;
+#submitNewInfoButton{
+  background-color: #112938;
 }
-
-strong {
-	font-weight: 600;
+#submitNewInfoButton:hover{
+  color: #DC635F;
 }
-
-h1, h2, h3, h4, h5, h6 {
-
-	font-weight: 300;
+.tilepurple{
+  background-color: #B27DF4;
+  height: 200px;
+  padding: 1em;}
+.tilered {
+  background-color:#5F2A1E;
+  height: 200px;
+  padding: 1em;}
+.tileorange {
+  background-color:#DE2D38;
+  height: 200px;
+  padding: 1em;}
+.tilegrey {
+  background-color:#C5C5C6;
+  height: 200px;
+  padding: 1em;
 }
-
-strong {
-  font-weight: 400;
-}
+.tileblue {
+  background-color: #5CB5C6;
+  height: 200px;
+  padding: 1em;}
 
 .tile {
   width: 100%;
 	display: inline-block;
 	box-sizing: border-box;
 	background: #fff;
-	padding: 20px;
 	margin-bottom: 30px;
 }
+
+
 /*end of colors to tiles*/
 
 #iconHover:hover {
@@ -187,22 +211,3 @@ li .socialMediaIcon {
 	margin: 10px 15px 10px 15px;
 	text-align: vertical right;
 }
-
-/*adds pretty alternating colors*/
-/*.rowForProfile{
-  margin-top: -10px;
-}
-div.newCompanyTemplate:nth-of-type(odd) {
-	background-color: #A7C5CD;
-}
-div.newCompanyTemplate:nth-of-type(even) {
-	background-color: #17A5A4;
-}
-.rowForProfile:nth-of-type(odd){
-	background-color:#f29698 ;
-	height:280px;
-}
-.rowForProfile:nth-of-type(even){
-	background-color:#F27274;
-	height:280px;
-}*/
