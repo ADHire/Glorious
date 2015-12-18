@@ -189,8 +189,8 @@ app.controller("routeCtrlShow", function($scope, $routeParams, $localStorage, $h
   var current = 0;
   function myTimer() {
     var tag = $scope.pictures[current];
-    // var container = document.getElementById("foo");
-    // container.src=tag;
+    var container = document.getElementById("foo");
+    container.src=tag;
 
     //If we're at our max (minus 1 because of 0 based index) then reset
     if (current == $scope.pictures.length - 1) {
